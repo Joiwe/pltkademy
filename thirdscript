@@ -1,0 +1,7 @@
+#!/bin/bash
+memorydate=`free`
+cpu=$(nproc)
+echo "hostname: $HOSTNAME,
+count of cpu cores: $cpu, 
+total memory are:
+$memorydate" > sysinfo.txt

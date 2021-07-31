@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo grep -iRl "server_name   nginx01.com" /etc | xargs sed -i 's/server_name   nginx01.com/server_name   nginx02.com/g'
